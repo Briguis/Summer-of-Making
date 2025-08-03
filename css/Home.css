@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #666666;
+}
+
+body{
+    background-color: black;
+    height: 100%;
+
+}
+.image{
+  height: 65px;
+  width: auto;
+}
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/Logo/1.jpg);
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;
+    transition: 1s;
+
+}
+.Mark-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Italiana", sans-serif;
+    
+}
+.Mark{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    color: red;
+}
+#NameMark{
+    font-size: 7rem;
+}
+#Slogan{
+    font-size: 2rem;
+}
+
+.Mark.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+} 
+.Mark.fade{
+    bottom: 150xp;
+    opacity: 0;
+    transition: ease-in-out  0.5s;
+}
+.NavBar{
+    align-items: Center;
+    padding: 12px 30px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: "Italiana", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    margin-left: 10px;
+    transition: ease-in-out 0.5s;
+}
+a:hover{ 
+    background: linear-gradient(45deg, #720707, #a30704, #d40a03);
+    /* https://blog.cisne.dev/texto-com-degrade-em-css-igual-a-esse-titulo/ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.searchBar{
+    padding: 6px 10px;
+    border: 1px solid #720707;
+    border-radius: 20px;
+}
+.Actions{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#userAC {
+    height: 30px;
+    object-fit: contain;
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+#userAC:hover {
+    transform: scale(1.1);
+}
+.sectionCar{
+    background: black;
+    overflow: hidden;
+    padding: 40px;
+}
+.header-section{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.Blackstone{
+    background-image: url(/img/Logo/wallpaper.png);
+     background-size: cover;        
+    background-position: center;    
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.BlackstoneTitles{
+    color:white;
+    font-family: "Italiana", sans-serif;
+    width: 700px;
+
+}
+.BlackstoneTitles h1{
+    font-size: 6.8rem;
+    margin-left: 38px;
+}
+.Black{
+    background: linear-gradient(45deg, #720707, #a30704, #d40a03);
+    /* https://blog.cisne.dev/texto-com-degrade-em-css-igual-a-esse-titulo/ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ContainerHome{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+}
+.Right{
+margin-left: 25px;
+justify-content: center;
+align-items: center;
+}
+.Right img{
+    margin: 65px;
+    width: 600x;
+    height: 600px;
+}
+
+.par{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    margin: 38px 25px;
+    width: 600px;
+    font-family: "Roboto", sans-serif;
+}
+
+#teste{
+    margin-top: 50px;
+    
+    background: linear-gradient(45deg, #720707, #a30704, #d40a03);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#receba{
+    margin-top: 20px;
+    
+    background: linear-gradient(45deg, #720707, #a30704, #d40a03);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Line{
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+}
+.Card{
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+    scroll-snap-align: start;
+    background-color: #666666;
+}
+.Card img{
+    border-radius: 10px;
+    width: 100%;
+}
+.Card p{
+    margin-top: 8px;
+    font-size: 14px;
+}
+.header-section h2{
+    color: white;
+    font-family: "Italiana", sans-serif;
+}
+#more{
+    color: white;
+}
+
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-top: 200px;
+}
+.ContainerFooter{
+    background-color: aqua;
+}
+
+
+
+
+.site-footer {
+    background-color: black;
+    color: #ccc;
+    padding: 40px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-social .icons a {
+    display: inline-block;
+    margin-right: 10px;
+} 
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+}
